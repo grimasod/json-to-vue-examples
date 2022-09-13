@@ -12,5 +12,13 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: 'json-to-vue/assets/[name]-[hash][extname]',
+        entryFileNames: 'json-to-vue/[name].js'
+      }
+    }
   }
 })
