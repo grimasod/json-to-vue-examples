@@ -1,0 +1,148 @@
+{
+  "cms1": ["Click a  utton to see a demo in action"],
+  "cms2": [
+    {
+      "children": ["One bit of text"]
+    },
+    {
+      "children": ["Another bit of text"]
+    }
+  ],
+  "cms3": [
+    {
+      "children": ["This is a div"]
+    },
+    {
+      "element": "span",
+      "children": ["This is a span"]
+    },
+    {
+      "element": "h1",
+      "children": ["This is a H1 heading"]
+    }
+  ],
+  "cms4": [
+    {
+    "element": "ul",
+    "children": [
+        {
+          "element": "li",
+          "children": ["First item in a list"]
+        },
+        {
+          "element": "li",
+          "children": ["Second item in a list"]
+        },
+        {
+          "element": "li",
+          "children": [
+            "Third item in a list ",
+            {
+              "element": "span",
+              "children": ["with a span within it"]
+            },
+            "."
+          ]
+        }
+      ]
+    }
+  ],
+  "cms5": [
+    {
+      "element": "section",
+      "attributes": {
+        "id": "xyz",
+        "class": "italic text-green-600 font-bold text-lg"
+      },
+      "children": ["This is a section with an id and CSS classes"]
+    }
+  ],
+  "cms6": [
+    {
+      "element": "img",
+      "attributes": {
+        "src": "https://picsum.photos/200/300",
+        "class": "border border-3 border-red-200 hover:border-red-600"
+      }
+    },
+    {
+      "element": "cite",
+      "children": [
+        "This image is from ",
+        {
+          "element": "a",
+          "attributes": {
+            "href": "https://picsum.photos/",
+            "target": "_blank",
+            "class": "underline text-blue-600"
+          },
+          "children": [
+            "Lorem Picsum"
+          ]
+        }
+      ]
+    }
+  ],
+  "cms7": [
+    {
+      "component": "router-link",
+      "attributes": {
+        "to": { "name": "composable" },
+        "class": "underline text-blue-600"
+      },
+      "children": [
+        "Composable page"
+      ]
+    }
+  ],
+  "cms8": [
+    {
+      "component": "MyGlobalFoo",
+      "children": [
+        {
+          "children": ["Default slot first child"]
+        },
+        {
+          "slot": "default",
+          "children": ["Default slot second child"]
+        },
+        {
+          "slot": "other",
+          "children": ["Other slot"]
+        }
+      ]
+    }
+  ],
+  "cms9": [
+    {
+      "component": "MyGlobalFoo",
+      "children": [
+        {
+          "slot": "default",
+          "element": "ul",
+          "children": [
+            {
+              "element": "li",
+              "children": ["First grandchild of the component"]
+            },
+            {
+              "element": "li",
+              "children": ["Second grandchild of the component"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cms10": [
+    {
+      "component": "MyGlobalFoo",
+      "children": [
+        {
+          "component": "MyGlobalBar",
+          "children": ["Bar Compnent default slot content"]
+        }
+      ]
+    }
+  ]
+}

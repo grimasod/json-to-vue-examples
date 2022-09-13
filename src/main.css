@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    .router-link-active {
+        @apply 'text-red-600';
+    }
+}
