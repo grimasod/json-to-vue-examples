@@ -1,7 +1,7 @@
 {
-  "name": "json-to-vue-demo",
-  "version": "0.0.1-alpha.8",
-  "description": "Demo for JsonToVue",
+  "name": "json-to-vue-examples",
+  "version": "0.0.1",
+  "description": "Examples for json-to-vue",
   "author": "David Grimason <davidgrimason@gmail.com>",
   "license": "MIT",
   "type": "module",
