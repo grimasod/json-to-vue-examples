@@ -497,10 +497,10 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
-json-to-vue@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/json-to-vue/-/json-to-vue-1.0.1.tgz#68a21ed1d1b55dcfe3a364846a2ed67ab196c18b"
-  integrity sha512-woDszZKpEa5F2GahvRPLu9K+gR5/ZUF8IQaFY1Iouu4Qz3N3Sjw/S12NgCMeiih7yZbAppsCE9wgoz/AsIsq2Q==
+json-to-vue@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/json-to-vue/-/json-to-vue-1.0.2.tgz#42540b82220e51f2bb272950a0c0bf6fd7d2a51b"
+  integrity sha512-6tglI7P7Fz1U18vU/GQfAvaK2GlCiK9VZdJNqEylFSdRDxTNjrvZXYclH6mNXdc3nKqu6JzfWyy1O7v2h0CLAg==
   dependencies:
     vue "^3.2.37"
 
