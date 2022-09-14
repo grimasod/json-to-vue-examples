@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto+Slab&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +6,6 @@
 
 @layer base {
     .router-link-active {
-        @apply 'text-red-600';
+        @apply 'text-red';
     }
 }

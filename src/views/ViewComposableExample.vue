@@ -1,5 +1,7 @@
 <template>
-  <MyCMS :content="cmsContent" />
+  <div>
+    <MyCMS :content="cmsContent" />
+  </div>
 </template>
 
 <script setup>

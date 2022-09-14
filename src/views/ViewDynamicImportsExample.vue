@@ -1,5 +1,7 @@
 <template>
-  <MyCMSDynamic :content="cmsContent" />
+  <div>
+    <MyCMSDynamic :content="cmsContent" />
+  </div>
 </template>
 
 <script setup>
