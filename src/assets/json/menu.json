@@ -1,0 +1,20 @@
+{
+  "main": [
+    {
+      "page": "home",
+      "label": "Introduction, data format and basic examples"
+    },
+    {
+      "page": "global-components",
+      "label": "Example of using global component registration"
+    },
+    {
+      "page": "composable",
+      "label": "Example of using the composable with local component registration"
+    },
+    {
+      "page": "dynamic-imports",
+      "label": "Example of using the composable with dynamically imported components"
+    }
+  ]
+}

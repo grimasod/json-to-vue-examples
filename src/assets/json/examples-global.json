@@ -1,0 +1,70 @@
+{
+  "component": "MyGlobalFoo",
+  "attributes": {
+    "headline": "Foo Headline"
+  },
+  "children": [
+    {
+      "slot": "default",
+      "element": "h4",
+      "children": [
+        "Slot child 1"
+      ]
+    },
+    {
+      "children": [
+        {
+          "children": ["sc1"]
+        },
+        {
+          "children": ["sc2"]
+        }
+      ],
+      "attributes": {
+        "class": "text-red-600"
+      }
+    },
+    {
+      "element": "h4",
+      "slot": "other",
+      "children": [
+        "Slot child 3 - other slot",
+        {
+          "component": "MyGlobalBar",
+          "attributes": {
+            "tagline": "Bar tagline"
+          },
+          "children": [
+            {
+              "slot": "default",
+              "element": "h4",
+              "children": [
+                "Bar Slot child 1"
+              ]
+            },
+            {
+              "children": [
+                {
+                  "children": ["Bar c1"]
+                },
+                {
+                  "children": ["Bar c2"]
+                }
+              ],
+              "attributes": {
+                "class": "text-green-300"
+              }
+            },
+            {
+              "element": "h4",
+              "slot": "bar",
+              "children": [
+                "Bar Slot child 3 - other slot"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

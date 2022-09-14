@@ -5,6 +5,19 @@
   </div>
   <div class="flex justify-center text-navy">
     <div class="w-full max-w-screen-md flex flex-col items-center px-4 py-10 lg:px-12">
+      <h1 class="text-4xl font-bold">
+        JSON to Vue
+      </h1>
+      <ul class="py-6">
+        <li>
+          Git:
+          <a href="https://github.com/grimasod/json-to-vue" class="text-blue2 hover:text-blue">github.com/grimasod/json-to-vue</a>
+        </li>
+        <li>
+          NPM:
+          <a href="https://www.npmjs.com/package/json-to-vue" class="text-blue2 hover:text-blue">npmjs.com/package/json-to-vue</a>
+        </li>
+      </ul>
       <JsonToVue :content="menu" />
       <router-view class="w-full" />
     </div>
@@ -12,59 +25,35 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { JsonToVue } from 'json-to-vue'
 import SiteHeader from '@/components/SiteHeader.vue'
 import SvgCircle from '@/components/SvgCircle.vue'
+import { useCms } from '@/composables'
  
-const menu = ref([
-  {
+import { useIcon } from '@/composables'
+
+const { getIcon } = useIcon()
+const rightIcon = getIcon('right')
+
+const { getContent } = useCms()
+const menuOriginal = getContent('menu')
+
+const menu = computed(() => [{
+  element: 'nav',
+  attributes: {
+    class: 'flex flex-col mb-10'
+  },
+  children: menuOriginal.main.map(item => ({
+    component: 'router-link',
     attributes: {
-      class: 'flex gap-4 mb-10',
+      to: { name: item.page },
+      class: 'text-orange py-1 underline'
     },
     children: [
-      {
-        component: 'router-link',
-        attributes: {
-          to: { name: 'home' },
-          class: 'border border-orange text-orange rounded px-4 py-2 bg-gray4'
-        },
-        children: [
-          'Home'
-        ]
-      },
-      {
-        component: 'router-link',
-        attributes: {
-          to: { name: 'global-components' },
-          class: 'border border-orange text-orange rounded px-4 py-2 bg-gray4'
-        },
-        children: [
-          'Global'
-        ]
-      },
-      {
-        component: 'router-link',
-        attributes: {
-          to: { name: 'composable' },
-          class: 'border border-orange text-orange rounded px-4 py-2 bg-gray4'
-        },
-        children: [
-          'Composables'
-        ]
-      },
-      {
-        component: 'router-link',
-        attributes: {
-          to: { name: 'dynamic-imports' },
-          class: 'border border-orange text-orange rounded px-4 py-2 bg-gray4'
-        },
-        children: [
-          'Dynamically imported components'
-        ]
-      }
+      rightIcon,
+      item.label
     ]
-  }
-])
- 
+  }))
+}])
 </script>

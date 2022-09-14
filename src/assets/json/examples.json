@@ -1,6 +1,6 @@
 {
-  "cms1": ["Click a button above to see a demo in action"],
-  "cms2": [
+  "home1": ["Some text to display"],
+  "home2": [
     {
       "children": ["One bit of text"]
     },
@@ -8,7 +8,7 @@
       "children": ["Another bit of text"]
     }
   ],
-  "cms3": [
+  "home3": [
     {
       "children": ["This is a div"]
     },
@@ -21,7 +21,7 @@
       "children": ["This is a H1 heading"]
     }
   ],
-  "cms4": [
+  "home4": [
     {
     "element": "ul",
     "children": [
@@ -47,7 +47,7 @@
       ]
     }
   ],
-  "cms5": [
+  "home5": [
     {
       "element": "section",
       "attributes": {
@@ -57,7 +57,7 @@
       "children": ["This is a section with an id and CSS classes"]
     }
   ],
-  "cms6": [
+  "home6": [
     {
       "element": "img",
       "attributes": {
@@ -83,7 +83,7 @@
       ]
     }
   ],
-  "cms7": [
+  "home7": [
     {
       "component": "router-link",
       "attributes": {
@@ -91,11 +91,11 @@
         "class": "underline text-blue-600"
       },
       "children": [
-        "Composable page"
+        "Example of using the composable"
       ]
     }
   ],
-  "cms8": [
+  "home8": [
     {
       "component": "MyGlobalFoo",
       "children": [
@@ -113,7 +113,7 @@
       ]
     }
   ],
-  "cms9": [
+  "home9": [
     {
       "component": "MyGlobalFoo",
       "children": [
@@ -134,7 +134,7 @@
       ]
     }
   ],
-  "cms10": [
+  "home10": [
     {
       "component": "MyGlobalFoo",
       "children": [

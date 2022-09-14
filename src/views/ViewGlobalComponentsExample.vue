@@ -10,6 +10,6 @@ import { ref } from 'vue'
 import { useCms } from '@/composables'
 
 const { getContent } = useCms()
-const cmsContent = ref(getContent('global'))
+const cmsContent = ref([getContent('global')])
 
 </script>

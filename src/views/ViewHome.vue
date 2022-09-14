@@ -1,32 +1,33 @@
 <template>
   <div>
-    <JsonToVue :content="cms.cms1" />
+    <JsonToVue :content="examples.home1" />
     <hr class="w-full my-4">
-    <JsonToVue :content="cms.cms2" />
+    <JsonToVue :content="examples.home2" />
     <hr class="w-full my-4">
-    <JsonToVue :content="cms.cms3" />
+    <JsonToVue :content="examples.home3" />
     <hr class="w-full my-4">
-    <JsonToVue :content="cms.cms4" />
+    <JsonToVue :content="examples.home4" />
     <hr class="w-full my-4">
-    <JsonToVue :content="cms.cms5" />
+    <JsonToVue :content="examples.home5" />
     <hr class="w-full my-4">
-    <JsonToVue :content="cms.cms6" />
+    <JsonToVue :content="examples.home6" />
     <hr class="w-full my-4">
-    <JsonToVue :content="cms.cms7" />
+    <JsonToVue :content="examples.home7" />
     <hr class="w-full my-4">
-    <JsonToVue :content="cms.cms8" />
+    <JsonToVue :content="examples.home8" />
     <hr class="w-full my-4">
-    <JsonToVue :content="cms.cms9" />
+    <JsonToVue :content="examples.home9" />
     <hr class="w-full my-4">
-    <JsonToVue :content="cms.cms10" />
+    <JsonToVue :content="examples.home10" />
   </div>
 </template>
 
 <script setup>
 import { JsonToVue } from 'json-to-vue'
 import { ref } from 'vue'
-import data from '/src/assets/json/data.json'
+import { useCms } from '@/composables'
 
-const cms = ref(data)
+const { getContent } = useCms()
+const examples = ref(getContent('examples'))
 
 </script>
