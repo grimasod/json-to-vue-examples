@@ -4,20 +4,20 @@
     <SvgCircle class="max-w-full max-h-full text-light" />
   </div>
   <div class="flex justify-center text-navy">
-    <div class="w-full max-w-screen-md flex flex-col items-center px-4 py-10 lg:px-12">
-      <h1 class="text-4xl font-bold">
-        JSON to Vue
-      </h1>
-      <ul class="py-6">
-        <li>
-          Git:
-          <a href="https://github.com/grimasod/json-to-vue" class="text-blue2 hover:text-blue">github.com/grimasod/json-to-vue</a>
-        </li>
-        <li>
-          NPM:
-          <a href="https://www.npmjs.com/package/json-to-vue" class="text-blue2 hover:text-blue">npmjs.com/package/json-to-vue</a>
-        </li>
-      </ul>
+    <div class="w-full max-w-screen-md flex flex-col items-center px-4 py-6 lg:px-12">
+      <div class="flex gap-10 pb-4">
+        <h1 class="text-4xl font-bold">
+          JSON to Vue
+        </h1>
+        <ul class="">
+          <li>
+            <a href="https://github.com/grimasod/json-to-vue" class="text-blue2 hover:text-blue">github.com/grimasod/json-to-vue</a>
+          </li>
+          <li>
+            <a href="https://www.npmjs.com/package/json-to-vue" class="text-blue2 hover:text-blue">npmjs.com/package/json-to-vue</a>
+          </li>
+        </ul>
+      </div>
       <JsonToVue :content="menu" />
       <router-view class="w-full" />
     </div>
@@ -42,13 +42,13 @@ const menuOriginal = getContent('menu')
 const menu = computed(() => [{
   element: 'nav',
   attributes: {
-    class: 'flex flex-col mb-10'
+    class: 'text-orange flex flex-col mb-10'
   },
   children: menuOriginal.main.map(item => ({
     component: 'router-link',
     attributes: {
       to: { name: item.page },
-      class: 'text-orange py-1 underline'
+      class: 'underline'
     },
     children: [
       rightIcon,

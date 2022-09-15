@@ -4,7 +4,7 @@ const svg = {
     xmlns: 'http://www.w3.org/2000/svg',
     fill: 'currentColor',
     viewBox: '0 0 48 48',
-    class: 'inline-flex h-8 w-8'
+    class: 'inline-flex h-6 w-6'
   },
   children: []
 }
