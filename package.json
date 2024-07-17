@@ -2,7 +2,7 @@
   "name": "json-to-vue-examples",
   "version": "0.0.1",
   "description": "Examples for json-to-vue",
-  "author": "David Grimason <davidgrimason@gmail.com> (https://circleoflifecycle.com/)",
+  "author": "David Grimason <davidgrimason@gmail.com>",
   "license": "MIT",
   "type": "module",
   "scripts": {
